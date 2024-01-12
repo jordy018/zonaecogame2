@@ -1,0 +1,53 @@
+body {
+  background-color: #3AED7F ;
+}
+
+
+
+h3 {
+    font-size: 66px; /* Tamaño del texto */
+    /* Otros estilos si es necesario */
+    font-weight: bold; /* Negrita */
+    font-weight: 800;
+    font-family: 'Verdana', sans-serif; /* Cambiar la fuente a Arial */
+    color:black;
+    text-align: center; /* Centrar el texto */
+    -webkit-text-stroke: 2px white;
+            
+}
+
+body {
+    background-image: url('img/fondo5.jpg');
+    background-size: cover; 
+    height: 80vh;
+    background-position: botton; 
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+}
+
+botton{
+    
+}
+
+section.ruleta {
+   display: flex;
+   justify-content: center;
+   align-items: center; /* Para centrar verticalmente */
+   margin-top: 50px;
+   background-color: #F3F3F3;
+   width: 80%; /* Ajusta el ancho según tus necesidades */
+   max-width: 400px; /* Establece un ancho máximo si lo deseas */
+   height: 100px; /* Ajusta la altura según tus necesidades */
+   max-height: 200px; /* Establece una altura máxima si lo deseas */
+   margin: 50px auto; /* Centra horizontalmente y agrega margen superior */
+}
+
+.imagen {
+   margin-right: 22px;
+   cursor: pointer;
+   transition: transform 0.5s ease;
+}
+
+.imagen:hover {
+   transform: scale(1.2); /* Efecto de escala al pasar el ratón */
+}

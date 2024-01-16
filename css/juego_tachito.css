@@ -1,0 +1,258 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-image: url("../imagenes/parque.jpg");
+  background-size: 100%;
+}
+
+h2 {
+  background-color: #DEB887; /* Cambia el valor a tu color deseado */
+  border: 2px solid #8B0000; /* Cambia el valor a tu color deseado */
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black; /* Cambia el valor a tu color deseado */
+}
+
+#game {
+  margin-top: 30px;
+  border: 6px dotted black; /* Agrega esta línea para el borde */
+}
+
+#timer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #ff0000; /* Cambia el valor a tu color deseado */
+  border: 2px solid #000000; /* Cambia el valor a tu color deseado */
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #ffffff; /* Cambia el valor a tu color deseado */
+}
+
+#score {
+  display: flex;
+  justify-content: center; /* Ajuste para centrar los elementos */
+  align-items: center;
+  margin-top: 10px;
+}
+
+#correct-score,
+#incorrect-score {
+  text-align: center;
+  background-color: cadetblue; /* Cambia el valor a tu color deseado */
+  border: none;
+  border-radius: 6px;
+  padding: 5px; /* Se redujo el espacio interno */
+  margin: 0 50px; /* Margen horizontal entre los marcadores */
+  font-size: 18px;
+  color: #ffffff; /* Cambia el valor a tu color deseado */
+}
+
+#tachos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tacho-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.tacho {
+  width: 80px;
+  height: 125px;
+  border-radius: 8px;
+  margin-top: 10px;
+  background-size: 100% 100%;
+}
+
+.tacho-title {
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#basura {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.basura {
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#game {
+  margin-top: 30px;
+}
+
+#home {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Imagenes para los tachos*/
+
+#tacho-papel {
+  background-image: url("../imagenes/papel.png");
+  background-size: cover;
+}
+
+#tacho-plastico {
+  background-image: url("../imagenes/plastico.png");
+  background-size: cover;
+}
+
+#tacho-vidrio {
+  background-image: url("../imagenes/vidrio.png");
+  background-size: cover;
+}
+
+#tacho-metales {
+  background-image: url("../imagenes/metal.png");
+  background-size: cover;
+}
+
+#tacho-organico {
+  background-image: url("../imagenes/organico.png");
+  background-size: cover;
+}
+
+#tacho-peligroso {
+  background-image: url("../imagenes/peligroso.png");
+  background-size: 100% 100%;
+}
+/* Imagenes para la basura*/
+
+#basura-papel1 {
+  background-image: url("../imagenes/papeles.png");
+  background-size: 100% 100%;
+}
+#basura-papel2 {
+  background-image: url("../imagenes/servilleta.png");
+  background-size: 100% 100%;
+}
+
+#basura-plastico1 {
+  background-image: url("../imagenes/botellas.png");
+  background-size: 100% 100%;
+}
+#basura-plastico2 {
+  background-image: url("../imagenes/funda.png");
+  background-size: 100% 100%;
+}
+
+#basura-vidrio1 {
+  background-image: url("../imagenes/botellas_vidrio.png");
+  background-size: 100% 100%;
+}
+#basura-vidrio2 {
+  background-image: url("../imagenes/copa.png");
+  background-size: 100% 100%;
+}
+#basura-metales1 {
+  background-image: url("../imagenes/latas.png");
+  background-size: 100% 100%;
+}
+#basura-metales2 {
+  background-image: url("../imagenes/tacho.png");
+  background-size: 100% 100%;
+}
+
+#basura-organico1 {
+  background-image: url("../imagenes/manzana.jpg");
+  background-size: 100% 100%;
+}
+#basura-organico2 {
+  background-image: url("../imagenes/pimiento.png");
+  background-size: 100% 100%;
+}
+#basura-peligroso1 {
+  background-image: url("../imagenes/medicamentos.png");
+  background-size: 100% 100%;
+}
+#basura-peligroso2 {
+  background-image: url("../imagenes/reciduo_laboratorio.jpg");
+  background-size: 100% 100%;
+}
+/* Estilos para el mensaje */
+
+
+.message-container {
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: saddlebrown; /*Cambia el color al que desees*/
+  border: 2px solid black; /*Cambia el color al que desees*/
+  border-radius: 6px;
+  font-size: 24px;
+  color: #ffffff; 
+}
+
+/* Transición suave al arrastrar la basura */
+.basura {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.basura:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/* Animación al mostrar/ocultar el mensaje */
+.message {
+  animation: fade-in-out 0.5s ease-in-out;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Efecto de sombra en los tachos */
+.tacho {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease-in-out;
+}
+

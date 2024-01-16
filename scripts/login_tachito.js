@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var homeIcon = document.querySelector('.home-icon');
   homeIcon.addEventListener('click', function() {
     clearInterval(countdownInterval);
-    window.location.href = 'menu.html'; // Reemplaza 'menu.html' con la URL de tu menú principal
+    window.location.href = 'pagina.html'; // Reemplaza 'menu.html' con la URL de tu menú principal
   });
 
   playButton.addEventListener('click', function() {

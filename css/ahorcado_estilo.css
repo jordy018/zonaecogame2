@@ -14,7 +14,7 @@ body{
 	align-items: center;
 	/*width: 100%;*/
 	min-height: 100vh;
-	background: url(FONDO.jpg) no-repeat;
+	background: url(FONDO_AHORCADO.jpg) no-repeat;
 	background-position: center;
 	background-size: cover;
     /*background: linear-gradient( #9b58d1,#ae91c5 );

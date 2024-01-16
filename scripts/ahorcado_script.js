@@ -61,17 +61,17 @@ function reiniciarJuego() {
 function cambiarImagenIntentos() {
     
     if (intentosRestantes === 5) {
-            document.getElementById("imagenIntentos").src = "../imagenes/IMG_1.png"; // Ruta de la imagen para 4 intentos
+            document.getElementById("imagenIntentos").src = "imagenes/IMG_1.png"; // Ruta de la imagen para 4 intentos
         } else if (intentosRestantes === 4) {
-            document.getElementById("imagenIntentos").src = "../imagenes/IMG_2.png"; // Ruta de la imagen para 3 intentos
+            document.getElementById("imagenIntentos").src = "imagenes/IMG_2.png"; // Ruta de la imagen para 3 intentos
         } else if (intentosRestantes === 3) {
-            document.getElementById("imagenIntentos").src = "../imagenes/IMG_3.png"; // Ruta de la imagen para 2 intentos
+            document.getElementById("imagenIntentos").src = "imagenes/IMG_3.png"; // Ruta de la imagen para 2 intentos
         } else if (intentosRestantes === 2) {
-            document.getElementById("imagenIntentos").src = "../imagenes/IMG_4.png"; // Ruta de la imagen para 1 intento
+            document.getElementById("imagenIntentos").src = "imagenes/IMG_4.png"; // Ruta de la imagen para 1 intento
         } else if (intentosRestantes === 1){
-            document.getElementById("imagenIntentos").src = "..imagenes/IMG_5.png"; // Ruta de la imagen para 0 intentos
+            document.getElementById("imagenIntentos").src = "imagenes/IMG_5.png"; // Ruta de la imagen para 0 intentos
         } else {
-            document.getElementById("imagenIntentos").src = "../imagenes/IMG_6.png"; // Ruta de la imagen para 0 intentos
+            document.getElementById("imagenIntentos").src = "imagenes/IMG_6.png"; // Ruta de la imagen para 0 intentos
         }
 }
 

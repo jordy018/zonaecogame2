@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reciclaje Interactivo</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/juego_tachito.css">
+  <link rel="icon" href="imagenes/zona.png" type="image/png">
+</head>
+<body>
+  <div id="timer">
+    <span id="time">30</span>s
+  </div>
+  <div id="score">
+    <div id="correct-score">Correctos: 0</div>
+    <div id="incorrect-score">Incorrectos: 0</div>
+  </div>
+  <a href="login_tachito.html"><img src="imagenes/casita.png" alt="Casita" id="home"></a> </br></br>
+  <div id="game">
+    <div id="tachos">
+      <div class="tacho-container">
+        <h2>Papel</h2>
+        <div class="tacho" id="tacho-papel" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <div class="tacho-container">
+        <h2>Plástico</h2>
+        <div class="tacho" id="tacho-plastico" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <div class="tacho-container">
+        <h2>Vidrio</h2>
+        <div class="tacho" id="tacho-vidrio" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <div class="tacho-container">
+        <h2>Metales</h2>
+        <div class="tacho" id="tacho-metales" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <div class="tacho-container">
+        <h2>Orgánico</h2>
+        <div class="tacho" id="tacho-organico" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <div class="tacho-container">
+        <h2>Peligroso</h2>
+        <div class="tacho" id="tacho-peligroso" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+    </div>
+    <div id="basura">
+      <div id="basura-papel1" class="basura" draggable="true" ondragstart="drag(event)"></div>
+      <div id="basura-papel2" class="basura" draggable="true" ondragstart="drag(event)"></div>
+      <div id="basura-plastico1" class="basura" draggable="true" ondragstart="drag(event)"></div>
+      <div id="basura-plastico2" class="basura" draggable="true" ondragstart="drag(event)"></div>
+      <div id="basura-vidrio1" class="basura" draggable="true" ondragstart="drag(event)"></div>
+      <div id="basura-vidrio2" class="basura" draggable="true" ondragstart="drag(event)"></div>
+      <div id="basura-metales1" class="basura" draggable="true" ondragstart="drag(event)"></div>
+      <div id="basura-metales2" class="basura" draggable="true" ondragstart="drag(event)"></div>
+      <div id="basura-organico1" class="basura" draggable="true" ondragstart="drag(event)"></div>
+      <div id="basura-organico2" class="basura" draggable="true" ondragstart="drag(event)"></div>
+      <div id="basura-peligroso1" class="basura" draggable="true" ondragstart="drag(event)"></div>
+      <div id="basura-peligroso2" class="basura" draggable="true" ondragstart="drag(event)"></div>
+    </div>
+  </div>
+  <div id="message-container"></div>
+  <script src="scripts/juego_tachito.js"></script>
+</body> 
+</html>

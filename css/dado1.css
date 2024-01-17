@@ -1,0 +1,53 @@
+      
+      body {
+         background-color: #3AED7F;
+         margin: 0;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 100vh;
+         cursor: pointer; /* Cambia el cursor al pasar sobre la página */
+      }
+
+      h4 {
+         font-size: 66px;
+         color: black;
+         text-align: center;
+          font-family: 'Silkscreen', sans-serif;
+          font-weight: bold; /* Negrita */
+      }
+
+      h4:hover {
+         transform: scale(1.2); /* Efecto de escala al pasar el ratón */
+      }
+
+      p {
+         font-size: 20px;
+         color: black;
+         text-align: center;
+         font-weight: bold;
+         font-family: 'Trebuchet MS', sans-serif;
+         font-weight: bold; /* Negrita */
+      }
+
+      body {
+         background-image: url('img/fondo2.jpg');
+         background-size: cover; 
+         height: 70vh;
+         background-position: center;
+         background-repeat: no-repeat; /* Evita que la imagen se repita */
+         overflow: hidden;
+         margin: 0;
+      }
+
+
+      .img {
+        margin-right: 22px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: transform 0.5s ease;
+      }
+
+      .img:hover {
+        transform: scale(1.2); /* Efecto de escala al pasar el ratón */
+      }

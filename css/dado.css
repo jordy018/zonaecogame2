@@ -1,7 +1,8 @@
 body {
-  background-color: #3AED7F ;
+   background-color: #3AED7F;
+   margin: 0;
+   overflow: hidden; /* Evita el desbordamiento de contenido */
 }
-
 
 
 h3 {
@@ -9,11 +10,11 @@ h3 {
     /* Otros estilos si es necesario */
     font-weight: bold; /* Negrita */
     font-weight: 800;
-    font-family: 'Verdana', sans-serif; /* Cambiar la fuente a Arial */
+    font-family: 'Trebuchet MS', sans-serif; /* Cambiar la fuente a Arial */
     color:black;
     text-align: center; /* Centrar el texto */
     -webkit-text-stroke: 2px white;
-            
+    transition: transform 0.3s ease;         
 }
 
 body {
@@ -25,22 +26,72 @@ body {
 
 }
 
-botton{
-    
+h3:hover {
+    transform: scale(1.2); /* Efecto de escala al pasar el ratón */
 }
 
-section.ruleta {
-   display: flex;
-   justify-content: center;
-   align-items: center; /* Para centrar verticalmente */
-   margin-top: 50px;
-   background-color: #F3F3F3;
-   width: 80%; /* Ajusta el ancho según tus necesidades */
-   max-width: 400px; /* Establece un ancho máximo si lo deseas */
-   height: 100px; /* Ajusta la altura según tus necesidades */
-   max-height: 200px; /* Establece una altura máxima si lo deseas */
-   margin: 50px auto; /* Centra horizontalmente y agrega margen superior */
+section p {
+   font-weight: bold;
 }
+
+.resultado p {
+   font-weight: bold;
+}
+
+button#iniciarJuego {
+   padding: 10px 20px;
+   font-size: 16px;
+   background-color: #3498db;
+   color: black;
+   font-weight: bold; /* Negrita */
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+#contenedorPrincipal {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: 20vh;
+   padding-bottom: 50px; /* Ajusta este valor según sea necesario */
+}
+
+.buttonContainer {
+   margin-top: 30px;
+   margin-bottom: 30px; /* Ajusta este valor según sea necesario */
+   text-align: center; /* Centra el botón horizontalmente */
+}
+
+button#iniciarJuego:hover {
+   background-color: #AC87C5;
+   transform: scale(1.1); /* Escala el botón al pasar el ratón */
+}
+
+section.juego {
+   text-align: center;
+   margin: 10px;
+   background-color: #86B6F6;
+   width: 100px; /* Ajusta el ancho según tus necesidades */
+   height: 120px; /* Ajusta la altura según tus necesidades */
+   margin-top: 20px;
+   display: inline-block; /* Para que estén en línea y no se extiendan horizontalmente */
+   padding: 10px;
+   transition: transform 0.3s ease;
+
+}
+
+ section:hover{
+    transform: scale(1.2); 
+ }
+
+p {
+   margin-top: 5px; /* Espacio entre la imagen y el nombre */
+   font-size: 12px; /* Tamaño del texto del nombre */
+}
+
 
 .imagen {
    margin-right: 22px;
@@ -50,4 +101,64 @@ section.ruleta {
 
 .imagen:hover {
    transform: scale(1.2); /* Efecto de escala al pasar el ratón */
+}
+
+.resultado {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #96EFFF;
+   padding: 20px;
+   border-radius: 10px;
+   z-index: 999; /* Coloca el contenedor por encima de otros elementos */
+}
+
+#resultadoImagen {
+   margin-bottom: 10px;
+}
+
+.imagenSuperior {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   width: 200px; /* Ajusta el ancho según tus necesidades */
+   height: auto; /* Mantén la proporción original */
+   border-radius: 5px;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra opcional */
+   z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.color-change {
+   font-size: 66px;
+   font-weight: bold;
+   font-family: 'Verdana', sans-serif;
+   color: black;
+   text-align: center;
+   -webkit-text-stroke: 2px white;
+   transition: transform 0.3s ease;
+}
+
+.star-container {
+   position: relative;
+   width: 100vw;
+   height: 100vh;
+}
+
+.star {
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   background-color: yellow;
+   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+   animation: moveStar 5s linear infinite; /* 5 segundos para dar una vuelta completa */
+}
+
+@keyframes moveStar {
+   0% { transform: translateX(0) translateY(0); }
+   100% { transform: translateX(100vw) translateY(100vh); }
 }

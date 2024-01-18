@@ -17,7 +17,7 @@ h3 {
 }
 
 body {
-    background-image: url('img/fondo5.jpg');
+    background-image: url('../imagenes/fondo5-2024.png');
     background-size: cover; 
     height: 80vh;
     background-position: botton; 

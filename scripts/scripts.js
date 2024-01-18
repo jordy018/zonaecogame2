@@ -74,7 +74,7 @@
       }
       else if (band == 4)
       {
-         window.location.href = "/pagina.html";
+         window.location.href = "/index.html";
       }   
 
    };

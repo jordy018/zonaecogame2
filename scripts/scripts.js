@@ -10,33 +10,7 @@
       var indiceAleatorio = Math.floor(Math.random() * imagenes.length);
       band = indiceAleatorio
       return imagenes[indiceAleatorio];
-<<<<<<< HEAD
 };
-=======
-      if (indiceAleatorio == 0)
-      {
-         window.location.href = "/login_tachito.html";
-      }
-      else if (indiceAleatorio == 1)
-      {
-         window.location.href = "/login_tachito.html";
-      }
-      else if (indiceAleatorio == 2)
-      {
-         window.location.href = "/login_tachito.html";
-      }
-      else if (indiceAleatorio == 3)
-      {
-         window.location.href = "/login_tachito.html";
-      }
-      else if (indiceAleatorio == 4)
-      {
-         window.location.href = "/login_tachito.html";
-      }
-      
-
-   };
->>>>>>> e666799a7d6366d561b3e0ddd9f7b91205865595
 
    // Función para mostrar el resultado y reproducir el sonido
    var mostrarResultado = function () {

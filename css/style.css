@@ -1,0 +1,125 @@
+
+@media screen and (max-width: 480px) {
+  body {
+    background-image: url(imagenes/FONDO1.jpg);
+    margin: 5px auto;
+    text-align: center;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-image: url(imagenes/FONDO1.jpg);
+    margin: 5px auto;
+    text-align: center;
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 769px) {
+  body {
+    background-image: url(imagenes/FONDO1.jpg);
+    margin: 5px auto;
+     text-align: center;
+  }
+}
+        
+        body{
+            width: 850px;
+            padding: 0px 10px;
+            margin: 5px auto;
+            text-align: center;
+            background-image: url(imagenes/FONDO1.jpg);
+        }
+        .flip-cartaTemporal-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+          box-shadow: 0 4px 8px 0 #0c0d0dbd;
+        }
+        .flip-cartaTemporal-front, .flip-cartaTemporal-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+        .flip-cartaTemporal-front {
+          background-color: #ffffff;
+        }
+        .flip-cartaTemporal-back {
+          background-color: #ffffff;
+          transform: rotateY(180deg);
+        }
+
+        .neon-button {
+          margin: 45px;
+          background-color: #333;
+          font-size: 30px;
+          font-family: 'Silkscreen', sans-serif;
+          color: #e7e7e7e5;
+          border: none;
+          padding: 10px 15px;
+          font-size: 15px;
+          cursor: pointer;
+          border-radius: 5px;
+         position: relative;
+         top:45px;
+         left: -575px;
+          font-weight: bold;
+          box-shadow: 0 0 30px #0bd804;
+          text-align: center; 
+          
+      }
+
+      .container {
+        width: 300px;
+        height: 420px;
+        perspective: 600px;
+        top:50%;
+        float: right
+
+      }
+      
+      .container:hover > .card {
+        cursor: pointer;
+        transform: rotateY(180deg);
+      }
+      
+      .card {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transition: transform 1500ms;
+        transform-style: preserve-3d;
+      }
+      
+      .front,
+      .back {
+        height: 100%;
+        width: 100%;
+        border-radius: 2rem;
+        box-shadow: 0 0 5px 2px rgba(12, 192, 36, 0.89);
+        position: absolute;
+        backface-visibility: hidden;
+      }
+      
+      .front {
+        background-image: url(imagenes/VOLTEADA1.png);
+      }
+      
+      .back {
+        background-color: #2cc50e;
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+      }
+        
+        

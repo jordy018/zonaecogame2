@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   countdownContainer.classList.add('countdown-container');
   document.body.appendChild(countdownContainer);
 
-  var countdown = 10;
+  var countdown = 15;
   var countdownDisplay = document.createElement('p');
   countdownDisplay.textContent = countdown + 's';
   countdownContainer.appendChild(countdownDisplay);

@@ -8,7 +8,7 @@
    var opcionAleatoria = function () {
       var indiceAleatorio = Math.floor(Math.random() * imagenes.length);
       return imagenes[indiceAleatorio];
-   };
+};
 
    // Función para mostrar el resultado y reproducir el sonido
    var mostrarResultado = function () {

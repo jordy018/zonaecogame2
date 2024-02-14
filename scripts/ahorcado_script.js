@@ -201,7 +201,8 @@ cargarNuevaPalabra();
 //Detecto la tecla que el usuario presion
 document.addEventListener("keydown", event => {
     //Controlo si la tecla presionada es una letra
-    if(isLetter(event.key)){
+    //if(isLetter(event.key)){
+    if (juegoIniciado && isLetter(event.key)) {
         //Tomo las letras ya ingresadas hasta el momento
         let letrasIngresadas = document.getElementById("letrasIngresadas").innerHTML;
         //arma un a arreglo con las letras ingresadas
@@ -261,17 +262,8 @@ document.getElementById('boton1').addEventListener('click', iniciarJuego);
 document.getElementById('boton3').addEventListener('click', reiniciarJuego);
 /**/
 
+function irAOtraPagina() {
+            // Reemplaza 'otraPagina.html' con la URL de la página a la que deseas ir
+            window.location.href = 'https://www.youtube.com/watch?v=DqSBQqj94JU';
+        }
 
-
-
-        
-
-
-
-
-
-
-
-
-
-      

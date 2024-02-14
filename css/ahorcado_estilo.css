@@ -14,7 +14,7 @@ body{
 	align-items: center;
 	/*width: 100%;*/
 	min-height: 100vh;
-	background: url("../imagenes/FONDO_AHORCADO.jpg") no-repeat;
+	background: url(../imagenes/FONDO.jpg) no-repeat;
 	background-position: center;
 	background-size: cover;
     /*background: linear-gradient( #9b58d1,#ae91c5 );
@@ -185,16 +185,79 @@ h3 span{
       z-index: 9999;
     }
 
- .TITULO{
+
+ /*.TITULO{
+    /*display: flex;
     font-family: 'Silkscreen', sans-serif;
-    color: white;
+    color: #dbf219;
     font-size: 45px;
     text-align: center;
     text-decoration: underline;
-    /*border-bottom: 6px solid #e4b33f;*/
+    /*border-bottom: 6px solid #e4b33f;
  }
+ */
+
+#gradienteContenedor {
+            /*display: flex;*/
+            text-align: center;
+            font-family: 'Silkscreen', sans-serif;
+            position: relative;
+            font-size: 4em;
+            color: transparent;
+            background: linear-gradient(45deg, #FDDD0F, #E77E0F, #E7470F);
+            background-clip: text;
+            -webkit-background-clip: text;
+            animation: gradientAnimation 10s ease infinite;
+            background-size: 200% 200%; /* Añadido para el movimiento */
+
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
+
  .todo{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
  }
+
+.inicio{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+button{      
+    overflow: hidden; /* Evitar que la imagen sobresalga del botón */
+    position: relative;
+    /*width: 200px;*/
+    height: 50px;
+    border: 2px solid #DBF219;
+    border-radius: 5px;
+    /*background-color: #3498db;*/
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+button img {
+    width: 40px; /* La imagen ocupa el 100% del ancho del contenedor (botón) */
+    /*height: 100px; /* La altura se ajusta automáticamente para mantener la proporción */
+    /*display: block; /* Eliminar cualquier espacio adicional debajo de la imagen */
+    /*position: absolute;*/
+        }
+button:hover {
+            background-color: #EBF786;
+        }
